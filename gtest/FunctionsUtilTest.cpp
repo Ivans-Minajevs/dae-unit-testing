@@ -51,3 +51,9 @@ TEST(FunctionsUtilGTest, function6) {
     EXPECT_EQ(funcUtil.function6(20), 23);
 }
 
+TEST(FunctionsUtilGTest, process) {
+    FunctionsUtil funcUtil;
+    EXPECT_EQ(funcUtil.process(10), 35);
+    EXPECT_EQ(funcUtil.process(7), 28);
+    EXPECT_EQ(funcUtil.process(-17), -32);
+}
