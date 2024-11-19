@@ -25,3 +25,11 @@ TEST(FunctionsUtilGTest, function3) {
     EXPECT_THROW(funcUtil.function3(51), std::runtime_error);
 }
 
+TEST(FunctionsUtilGTest, function4) {
+    FunctionsUtil funcUtil;
+    EXPECT_EQ(funcUtil.function4(30), 35);
+    EXPECT_EQ(funcUtil.function4(60), -1);
+    EXPECT_EQ(funcUtil.function4(45), 50);
+    EXPECT_EQ(funcUtil.function4(51), -1);
+}
+
